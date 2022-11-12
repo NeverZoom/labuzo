@@ -23,13 +23,13 @@
 
 <header>
 	<div class="section1">
-  <div class="menu-icon"><img src="images/dist/menu_icon.svg" alt=""></div>
+  <div class="menu-icon burger"><img src="images/dist/menu_icon.svg" alt=""></div>
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <h1 class="main_title">Научу управлять своим телом<br> и получать радость от движения!</h1>
       </div>
-      <div class="col-lg-10 d-flex justify-content-end">
+      <div class="col-lg-10 d-flex jke">
         <div class="author">
           <div class="name">Анна Лабузо</div>
           <p>эксперт по физиологии<br> двигательной системы<br> для детей и взрослых</p>
@@ -46,9 +46,34 @@
     </div>
   </div>
 </div>
+
+<div class="menu">
+  <div class="close"><img src="images/dist/close.svg" alt="close"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <nav>
+          <ul>
+            <li><a href="#res">Результат</a></li>
+            <li><a href="#for">Для кого</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#serv">Услуги</a></li>
+            <li><a href="#rew">Отзывы</a></li>
+            <li><a href="#cont">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal">
+  <div class="close"><img src="images/dist/close.svg" alt="close"></div>
+  <h1>Ваша заявка успешно отправлена.<br>Я свяжусь с Вами в ближайшее время</h1>
+</div>
 </header>
 <main>
-	<div class="section2">
+	<div class="section2" id="res">
 
     <div class="container">
       <div class="row">
@@ -120,7 +145,7 @@
     </a>
 
 </div>
-	<div class="section3">
+	<div class="section3" id="for">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -137,7 +162,7 @@
     </div>
   </div>
 </div>
-	<div class="section4">
+	<div class="section4" id="about">
   <div class="container">
     <div class="row">
       <div class="col-lg-4 image">
@@ -159,7 +184,7 @@
     <p>Я помогаю людям быть активными и испытывать радость от движения на протяжении всей жизни!</p>
   </div>
 </div>
-	<div class="section5">
+	<div class="section5" id="serv">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -228,7 +253,7 @@
     </div>
   </div>
 </div>
-	<div class="section6">
+	<div class="section6" id="rew">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -268,16 +293,22 @@
     </div>
   </div>
 </div>
-	<div class="section7">
+	<div class="section7" id="cont">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="title">Есть вопрос? Я с радостью отвечу </div>
       </div>
-      <div class="col-lg-12">
-        <form action="">
-          <input type="text" required placeholder="Имя">
-          <input type="text" required placeholder="+7">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <form action="" class="recall">
+          <input type="hidden" value="Лабузо" name="project_name">
+          <input type="hidden" value="mail@mail.ru" name="admin_email">
+          <input type="hidden" value="тема письма" name="form_subject">
+
+          <span>
+            <input type="text" required placeholder="Имя">
+            <input type="text" required placeholder="+7" pattern="[0-9]{11}">
+          </span>
           <button type="submit"><img src="images/dist/btn4.svg" alt=""></button>
         </form>
       </div>
@@ -289,11 +320,11 @@
 	<div class="section8">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-12 col-lg-6">
         <a href="tel:+79202183592" class="tel">+7 (920) 218-35-92</a>
       </div>
-      <div class="col-lg-4 d-flex justify-content-end">
-        <a href="#"><img src="images/dist/tg.svg" alt=""></a>
+      <div class="col-12 col-lg-4 d-flex jke1">
+        <a href="#"><img src="images/dist/vk.svg" alt=""></a>
       </div>
     </div>
   </div>
